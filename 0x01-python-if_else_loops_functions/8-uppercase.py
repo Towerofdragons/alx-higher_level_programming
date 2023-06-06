@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
 def uppercase(str):
-    for char in str:
-        if ord(char) >= 97:
-            print("{:c}".format(ord(char) - 32), end="")
+    for char in range(len(str)):
+        if ord(str[char]) >= 97:
+            print("{:c}".format(ord(str[char]) - 32), end="" if char != (len(str) - 1) else "\n")
         else:
-            print(char, end="")
-    print()
+            print(str[char], end="" if char != (len(str) - 1) else "\n")
+uppercase("Best")
