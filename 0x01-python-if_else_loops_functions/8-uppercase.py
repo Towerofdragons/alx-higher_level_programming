@@ -6,4 +6,3 @@ def uppercase(str):
             print("{:c}".format(ord(str[char]) - 32), end="" if char != (len(str) - 1) else "\n")
         else:
             print(str[char], end="" if char != (len(str) - 1) else "\n")
-uppercase("Best")
