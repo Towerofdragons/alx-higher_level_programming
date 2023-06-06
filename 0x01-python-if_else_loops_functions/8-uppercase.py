@@ -7,4 +7,3 @@ def uppercase(str):
         else:
             print(char, end="")
     print()
-uppercase("Best")
