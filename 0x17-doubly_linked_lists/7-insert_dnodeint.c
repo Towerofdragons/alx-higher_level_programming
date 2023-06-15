@@ -1,5 +1,13 @@
 #include "lists.h"
 
+/**
+ * insert_dnodeint_at_index - inserts element at an index
+ * @idx: index
+ * @n: int value assigned to new element
+ *
+ * Return: address of new element
+ */
+
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *curr;
@@ -8,7 +16,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 
 	curr = *h;
 	count = 0;
-
+	idx--;
 	new = malloc(sizeof(dlistint_t));
 	if (new == NULL)
 	{
