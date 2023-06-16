@@ -8,4 +8,3 @@ def square_matrix_simple(matrix=[]):
             res.append(col ** 2)
         new_matrix.append(res)
     return new_matrix
-
