@@ -50,7 +50,8 @@ class Rectangle:
         if self.__height == 0 or self.__width == 0:
             return rectangle
         for i in range(self.__height):
-            rectangle += "#" * self.__width
+            for w in range(self.__width):
+                rectangle += "#"
             rectangle += "\n"
         return rectangle
 
