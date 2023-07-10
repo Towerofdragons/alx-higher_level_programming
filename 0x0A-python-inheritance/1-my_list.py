@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """ MODULE holds definition for MyLst class """
 
 
