@@ -9,4 +9,3 @@ def is_same_class(obj, a_class):
     #print(obj.__class__)
     #print(a_class.__class__)
     return True if obj.__class__ == a_class else False
-
