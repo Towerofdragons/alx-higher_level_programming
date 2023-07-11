@@ -4,7 +4,7 @@ Module Defines the 'BaseGeometry class'
 """
 
 
-Class BaseGeometry:
+class BaseGeometry:
     """
     Definition of the BaseGeometry class.
     """
