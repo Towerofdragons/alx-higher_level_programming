@@ -1,4 +1,4 @@
-#!/usr/biin/python3
+#!/usr/bin/python3
 """
 Module holds definition for funtion 'is_in_of_class'
 """
