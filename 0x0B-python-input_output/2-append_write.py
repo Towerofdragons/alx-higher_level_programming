@@ -9,6 +9,6 @@ def append_write(filename="", text=""):
     """
 
     written = 0
-    with open("filename", 'a') as f:
+    with open(filename, 'a') as f:
         written = f.write(text)
     return written
