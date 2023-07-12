@@ -9,6 +9,6 @@ def read_file(filename=""):
     Reads a text file of UTF-8 format.
     """
 
-    with open("my_file_0.txt", 'r', encoding='utf-8') as f:
-        for line in f:
-            print(line, end="")
+    with open(filename, 'r', encoding='utf-8') as f:
+        #for line in f:
+        print(f.read(), end="")
