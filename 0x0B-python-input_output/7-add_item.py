@@ -21,9 +21,9 @@ if __name__ == "__main__":
     except Exception:
         obj = []
         save_to_json_file(obj, filename)
-    print(obj)
+    #print(obj)
     obj.extend(sys.argv[1:])
-    print(obj)
+    #print(obj)
     save_to_json_file(obj, filename)
 
 
