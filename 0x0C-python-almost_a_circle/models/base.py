@@ -4,6 +4,8 @@ This module defines: 'Base' class
 """
 
 
+import json
+
 class Base:
     """
     This class will be the “base” of all other classes in this project. 
@@ -18,3 +20,10 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
 
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        json_list = []
+        if not list_dictionaries:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
