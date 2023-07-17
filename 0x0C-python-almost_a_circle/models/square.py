@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Module defines class 'Square'
+Module defines class 'Square'.
 """
 
 

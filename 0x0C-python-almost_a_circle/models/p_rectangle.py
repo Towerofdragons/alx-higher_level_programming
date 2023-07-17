@@ -1,9 +1,12 @@
 #!/usr/bin/python3
+
 """
 This module defines 'Rectangle' class (Inherits from base).
 """
 
+
 from models.base import Base
+
 
 class Rectangle(Base):
     """
@@ -20,6 +23,7 @@ class Rectangle(Base):
     @property
     def width(self):
         return self.__width
+
     @width.setter
     def width(self, width):
         if type(width) != int:
@@ -31,6 +35,7 @@ class Rectangle(Base):
     @property
     def height(self):
         return self.__height
+
     @height.setter
     def height(self, height):
         if type(height) != int:
@@ -42,6 +47,7 @@ class Rectangle(Base):
     @property
     def x(self):
         return self.__x
+
     @x.setter
     def x(self, x):
         if type(x) != int:
@@ -54,6 +60,7 @@ class Rectangle(Base):
     @property
     def y(self):
         return self.__y
+
     @y.setter
     def y(self, y):
         if type(y) != int:
