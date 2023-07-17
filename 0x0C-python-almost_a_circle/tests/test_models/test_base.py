@@ -18,6 +18,9 @@ class Test_Base(unittest.TestCase):
 
         self.assertEqual(3, base2.id)
 
+    def test_values(self):
+        pass
+
 
 if __name__ == "__main__":
     unittest.main()
