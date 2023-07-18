@@ -45,10 +45,10 @@ class Base:
         """Returns list of JSON string representations"""
         json_list = []
 
-        if json_list is not None and json_list != '':
+        if json_string is not None and json_string != '':
            # if type(json_list) != str:
             #    raise TypeError("Input must be a JSON string")
             json_list = json.loads(json_string)
 
-        return json_string_list
+        return json_list
 
