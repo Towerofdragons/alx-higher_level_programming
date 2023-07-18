@@ -52,7 +52,7 @@ class Square(Rectangle):
                 elif k == "y":
                     self.y = v
 
-    
+
     def to_dictionary(self):
         return {
                 'x': self.x,
@@ -60,7 +60,7 @@ class Square(Rectangle):
                 'id': self.id,
                 'size': self.size
                 }
-    
+
 
     def __str__(self):
         return(f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}")
