@@ -27,32 +27,6 @@ class Square(Rectangle):
             raise ValueError("w must be > 0")
         self.width = value
         self.height = value
-    """
 
-    @property
-    def x(self):
-        return self.x
-
-    @x.setter
-    def x(self, value):
-        if type(value) != int:
-            raise TypeError ("x  must be an integer")
-        if value < 0:
-            raise ValueError("x must be > 0")
-        self.x = value
-
-
-    @property
-    def y(self):
-        return self.__y
-
-    @y.setter
-    def y(self, value):
-        if type(value) != int:
-            raise TypeError ("y  must be an integer")
-        if value < 0:
-            raise ValueError("y must be > 0")
-        self.__y = value
-    """
     def __str__(self):
-        return f"[Square] ({self.id}) {self.x}/{self.y}> - {self.size}"
+        return f"[Square] ({self.id}) {self.x}/{self.y}> - {self.width}"
