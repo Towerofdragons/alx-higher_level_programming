@@ -69,7 +69,8 @@ class Base:
         
         try: 
             with open(file_name, "r") as f:
-                json_content = json.load(f)
+                json_string = f.read()
+                json_content = cls.from_json_string(json_string)
 
             return [cls.create(**dict) for dict in json_content]
 
