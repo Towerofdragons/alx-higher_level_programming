@@ -5,7 +5,6 @@ This module defines: 'Base' class
 
 
 import json
-
 class Base:
     """
     This class will be the “base” of all other classes in this project. 
@@ -51,4 +50,15 @@ class Base:
             json_list = json.loads(json_string)
 
         return json_list
+
+    @classmethod
+    def create(cls, **dictionary):
+
+        """ Returns a new object with settings from 'dictionary' """
+        if cls.__name__ == "Rectangle":
+            dummy_obj = cls(1, 2)
+        if cls.__name__ == "Square":
+            dummy_obj = cls(1)
+        dummy_obj.update(**dictionary)
+        return dummy_obj
 
