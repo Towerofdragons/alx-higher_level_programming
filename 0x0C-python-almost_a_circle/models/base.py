@@ -76,5 +76,3 @@ class Base:
 
         except FileNotFoundError:
             return []
-
-
