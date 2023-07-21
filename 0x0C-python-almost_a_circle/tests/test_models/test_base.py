@@ -24,7 +24,7 @@ class Test_Base(unittest.TestCase):
         R1 = Rectangle(1,3, id=2)
         l1 = []
         l1.append(R1.to_dictionary())
-        self.assertEqual(b1.to_json_string(l1), '[{"id": 2, "width": 1, "height": 3, "x": 0, "y": 0}]')
+        self.assertEqual(R1.to_json_string(l1), '[{"id": 2, "width": 1, "height": 3, "x": 0, "y": 0}]')
 
 
 
