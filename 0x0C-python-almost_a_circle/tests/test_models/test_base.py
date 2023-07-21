@@ -13,25 +13,25 @@ class Test_Base(unittest.TestCase):
     """
     Tests attributes pertaining to the Base class.
     """
-
-    def setUp(self):
-        Main_Base_test_obj = Base()
+    @classmethod
+    def setUpClass(self):
+        self.B1 = Base()
 
     def test_to_json_string(self):
         """ Test 'Base' Static Method via inheritance with Rectangle subclass"""
-        b1 = Base()
 
         R1 = Rectangle(1,3, id=2)
         l1 = []
         l1.append(R1.to_dictionary())
         self.assertEqual(R1.to_json_string(l1), '[{"id": 2, "width": 1, "height": 3, "x": 0, "y": 0}]')
 
-
+    
 
     def test_id(self):
-        base1 = Base(1)
-
-        self.assertEqual(1, base1.id)
+        """
+        Test Automatic and manual assignment of instance Ids
+        """
+        self.assertEqual(1, self.B1.id)
         
         base2 = Base(3)
 
