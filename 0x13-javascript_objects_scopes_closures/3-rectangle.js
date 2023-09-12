@@ -4,8 +4,8 @@ class Rectangle{
 	{
 		if (typeof w === 'number' && w > 0 && typeof h === 'number' && h > 0)
 		{
-			this.height = h;
 			this.width = w;
+			this.height = h;
 		}
 	}
 
