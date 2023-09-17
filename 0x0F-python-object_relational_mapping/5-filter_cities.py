@@ -13,7 +13,7 @@ if __name__ == "__main__":
                 cur = db.cursor()
 
                 with db.cursor() as cur:
-                    cur.execute("SELECT cities.id, cities.name FROM cities JOIN states ON cities.state_id\
+                    cur.execute("SELECT cities.id, cities.name FROM cities JOIN states ON cities.state_id = states.id\
                             WHERE states.name LIKE BINARY %(state_name)s  ORDER BY cities.id ASC", {'state_name': argv[4]})
                     states = cur.fetchall()
 
