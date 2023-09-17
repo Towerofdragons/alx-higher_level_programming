@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-"Script lists all states from database 'hbtn_0e_0_usa'"
+"""
+Script lists all states from database 'hbtn_0e_0_usa'
+"""
 
-import MYSQLdb
+import MySQLdb
 from sys import argv
 
 if __name__ == "__main__":
