@@ -18,5 +18,4 @@ if __name__ == "__main__":
                     states = cur.fetchall()
 
                 if states is not None:
-                    for state in states:
-                        print (state)
+                    print(", ".join([state[1] for state in states]))
